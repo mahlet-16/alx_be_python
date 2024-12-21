@@ -2,4 +2,4 @@ number = int(input("Enter a number to see its multiplication table: "))
 
 for i in range(1, 10):
     calculate = number * i
-print(f{number} "* "{i} = {calculate})
+print(f"{number} * {i} = {calculate}")
