@@ -10,7 +10,7 @@ reminder = f"Reminder: '{task}' is a {priority} priority task"
 
 match priority:
     case "high":
-        reminder += " that requires immediate attention"
+        reminder += " that requires immediate attention today!"
     case "medium":
         reminder += " that should be completed soon"
     case "low":
@@ -23,6 +23,8 @@ match priority:
 # Adjust for time sensitivity
 if time_bound == "yes":
     reminder += " today!"
+else:
+    reminder += ". Consider completing it when you have free time
 
 # Final Reminder
 print(reminder)
