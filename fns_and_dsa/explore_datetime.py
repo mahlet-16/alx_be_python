@@ -37,7 +37,7 @@ def main():
         calculate_future_date(days_to_add)
     except ValueError:
         print("Please enter a valid integer for the number of days.")
-
+calculate_future_date()
 if __name__ == "__main__":
     main()
 
