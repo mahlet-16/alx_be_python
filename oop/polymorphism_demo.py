@@ -1,15 +1,16 @@
+import math
 class Shape:
     def area(self):
-        raise "NotImplimentedError"
+        raise NotImplimentedError("Subclass should impliment this method")
 class Rectangle(Shape):
-    def rect(self, length, width):
+    def area(self, length, width):
         self.length = length
-        delf.width = width
-        area.rect = self.length * self.width
+        self.width = width
+        return self.length * self.width
 class Circle(Shape):
-    def circ(self, radius):
+    def area(self, radius):
         self.radius = radius
-        area.circ = math.pi * self.radius * self.radius
+        return math.pi * self.radius ** 2
        
     
     
